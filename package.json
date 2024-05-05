@@ -1,15 +1,30 @@
 {
-  "type": "module",
   "name": "use-vittorix-utils",
   "version": "1.0.0",
   "description": "example to use vittorix-utils",
   "main": "index.js",
+  "type": "module",
   "dependencies": {
     "vittorix-utils": "^1.0.1"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vittorix/use-vittorix-utils.git"
+  },
+  "keywords": [
+    "javascript",
+    "utilities",
+    "utils",
+    "vittorix"
+  ],
   "author": "vittorix@gmail.com",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vittorix/use-vittorix-utils/issues"
+  },
+  "homepage": "https://github.com/vittorix/use-vittorix-utils#readme"
 }
