@@ -18,3 +18,5 @@ console.table(arr);
 
 p(vu.stringy({ name: "vitto" }));
 p(vu.parse('{"name":"vitto", "height":72}'));
+
+p("randomBoolean: " + vu.randomBoolean());
