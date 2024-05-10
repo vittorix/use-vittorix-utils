@@ -15,3 +15,6 @@ const arr = ["a", b, "C", { d: "dd" }, { e: { ee: "ee" } }, s];
 p(vu.isNotEmpty("q293487"));
 p(arr);
 console.table(arr);
+
+p(vu.stringy({ name: "vitto" }));
+p(vu.parse('{"name":"vitto", "height":72}'));
