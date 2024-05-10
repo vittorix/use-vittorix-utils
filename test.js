@@ -1,11 +1,24 @@
 import {
+  isEmpty,
+  isNotEmpty,
+  randomBoolean,
   test,
-  assertErr
+  testNot
 } from "./node_modules/vittorix-utils/vittorix-utils.js";
 
-assertErr("", "Test condition empty.");
-assertErr(false, "Test condition false.");
-assertErr(undefined, "Test condition undefined.");
+testNot(undefined, "Test not undefined.");
+testNot(null, "Test not null.");
+testNot("", "Test not empty string.");
+testNot(false, "Test not false.");
+
 test(" ");
 test(true);
 test(1);
+test(1 > 0);
+
+const randomBool = randomBoolean();
+test(randomBool === true || randomBool === false);
+
+test(isEmpty(""));
+test(isEmpty(" "));
+test(isNotEmpty(" a "));
