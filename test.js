@@ -53,6 +53,12 @@ const products = [
 
 const productsCopy = makeArr(products);
 test(productsCopy != undefined);
+test(!isString(productsCopy));
+test(!isNotEmpty(productsCopy));
+
+// check that they are different objects but same stringy
+test(makeArr(products) !== makeArr(productsCopy));
+test(stringy(makeArr(products)) === stringy(makeArr(productsCopy)));
 
 // test that the conversions make same stringy and different objects
 test(stringy(products) === stringy(productsCopy));
