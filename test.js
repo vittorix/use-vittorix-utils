@@ -1,6 +1,7 @@
 import {
   isEmpty,
   isNotEmpty,
+  isString,
   randomBoolean,
   test,
   testNot
@@ -19,6 +20,19 @@ test(1 > 0);
 const randomBool = randomBoolean();
 test(randomBool === true || randomBool === false);
 
+test(isEmpty(undefined));
+test(isEmpty(null));
 test(isEmpty(""));
 test(isEmpty(" "));
 test(isNotEmpty(" a "));
+test(isNotEmpty("1"));
+test(isNotEmpty("false"));
+test(isString("false"));
+test(isString(""));
+test(!isString(undefined));
+test(!isString(null));
+test(!isString(true));
+test(!isString([]));
+test(!isString(["a"]));
+test(!isString({}));
+test(!isString({ a: 1 }));

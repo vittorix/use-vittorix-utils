@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "dependencies": {
-    "vittorix-utils": "^1.0.6"
+    "vittorix-utils": "^1.0.7"
   },
   "devDependencies": {},
   "scripts": {
